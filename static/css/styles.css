@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Exo 2';
+    src: url('../fonts/exo2.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #a5a7ab;
+    font-family: 'Exo 2', sans-serif;
+    background: #2d3035;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: 12pt;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    min-height: 50px;
+    border-bottom: 1px solid #34373d;
+    display: flex;
+}
+
+header a {
+    display: flex;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+
+
+/*header a:hover {*/
+/*    background: #3c8224;*/
+/*    transition: background 0.5s ease;*/
+/*}*/
+
+a svg {
+    margin: auto;
+}
+
+.logo {
+    margin: auto;
+
+}
+
+.logo span {
+    color: #ffba00;
+}
+
+.menu_icon,
+.login {
+    height: 100%;
+    padding: 0 .5em;
+}
+
+.menu_icon:hover + .menu {
+    left: 0;
+    transition: left 0.5s ease;
+}
+
+.menu {
+    position: absolute;
+    top: 49px;
+    left: -80%;
+    height: calc(100vh - 49px);
+    width: 80%;
+    border: 1px solid #34373d;
+    padding: 20px 0 0 0;
+    background: #34373d;
+}
+
+.menu a {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+
+
+.menu:hover {
+    left: 0;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+footer {
+    color: crimson;
+}
